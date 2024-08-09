@@ -1,0 +1,156 @@
+.blog-page {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    animation: fade 0.3s ease-in-out;
+}
+
+.about-me {
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 100%;
+    padding: 2rem 1rem;
+}
+
+.image-me {
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 1rem auto;
+}
+
+.about-me h1 {
+    font-size: 2rem;
+    color: var(--black);
+    text-align: center;
+}
+
+.about-me h2 {
+    font-size: 1.75rem;
+    color: var(--black);
+    margin-bottom: 0.75rem;
+}
+
+.about-me p {
+    font-family: 'EB Garamond', 'serif';
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: var(--black);
+    text-indent: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery .column {
+    flex: 100%;
+    max-width: 100%;
+    margin: 0 0.5rem;
+}
+
+.gallery .column img {
+    vertical-align: middle;
+    width: 100%;
+    margin-bottom: 1rem;
+    transition: 0.3s;
+}
+
+.gallery .column img:hover {
+    transform: scale(105%);
+    transition: 0.3s;
+    cursor: zoom-in;
+}
+
+@media (min-width: 1200px) {
+    .about-me {
+        background-color: rgba(255, 255, 255, 0.75);
+        width: 75%;
+        padding: 2rem 5rem;
+    }
+    
+    .image-me {
+        border-radius: 50%;
+        height: 350px;
+        width: 350px;
+        display: block;
+        margin: 1rem auto;
+    }
+    
+    .about-me h1 {
+        font-size: 2rem;
+        color: var(--black);
+        text-align: center;
+    }
+    
+    .about-me h2 {
+        font-size: 1.75rem;
+        color: var(--black);
+        margin-bottom: 0.75rem;
+    }
+    
+    .about-me p {
+        font-family: 'EB Garamond', 'serif';
+        font-weight: 500;
+        font-size: 1.25rem;
+        color: var(--black);
+        text-indent: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .gallery .column {
+        flex: 45%;
+        max-width: 45%;
+        margin: 0 0.5rem;
+    }
+}
+
+@media (min-width: 1900px) {
+    .about-me {
+        background-color: rgba(255, 255, 255, 0.75);
+        width: 50%;
+        padding: 2rem 5rem;
+    }
+    
+    .image-me {
+        border-radius: 50%;
+        height: 350px;
+        width: 350px;
+        display: block;
+        margin: 1rem auto;
+    }
+    
+    .about-me h1 {
+        font-size: 2.5rem;
+        color: var(--black);
+        text-align: center;
+    }
+    
+    .about-me h2 {
+        font-size: 1.75rem;
+        color: var(--black);
+        margin-bottom: 0.75rem;
+    }
+    
+    .about-me p {
+        font-family: 'EB Garamond', 'serif';
+        font-weight: 500;
+        font-size: 1.25rem;
+        color: var(--black);
+        text-indent: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .gallery .column {
+        flex: 45%;
+        max-width: 45%;
+        margin: 0 0.5rem;
+    }
+}

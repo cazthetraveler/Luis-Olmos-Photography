@@ -1,0 +1,104 @@
+.portfolio-page {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    animation: fade 0.3s ease-in-out;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 100%;
+    padding: 2rem 1rem;
+}
+
+.portfolio button {
+    border: none;
+    background-color: inherit;
+    color: gray;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.portfolio button:hover {
+    color: var(--black);
+    transition: 0.3s;
+}
+
+.portfolio button.active {
+    color: var(--black);
+}
+
+.port-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.port-gallery figure img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+    animation: fade 0.3s ease-in-out;
+}
+
+.port-gallery figure img:hover {
+    transform: scale(105%);
+    transition: 0.3s;
+}
+
+@media (min-width: 1000px) {
+    .port-gallery {
+        justify-content: flex-start;
+        width: 52%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .portfolio {
+        background-color: rgba(255, 255, 255, 0.75);
+        width: 75%;
+        padding: 2rem 5rem;
+    }
+
+    .port-gallery {
+        justify-content: flex-start;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .port-gallery {
+        justify-content: flex-start;
+        width: 84%;
+    }
+}
+
+@media (min-width: 1900px) {
+    .portfolio {
+        background-color: rgba(255, 255, 255, 0.75);
+        width: 50%;
+        padding: 2rem 5rem;
+    }
+
+    .port-gallery {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+    }
+
+    .port-gallery figure img {
+        height: 260px;
+        width: 260px;
+        object-fit: cover;
+        object-position: center;
+        transition: 0.3s;
+    }
+}

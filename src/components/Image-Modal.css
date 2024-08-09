@@ -1,0 +1,102 @@
+.image-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 9999;
+    animation: fade 0.3s ease-in-out;
+}
+
+.image-modal div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: white;
+    padding: 0.5rem;
+}
+
+/* .image-modal div img {
+    width: 100%;
+    height: auto;
+} */
+
+.image-modal div img.landscape {
+    width: 100%;
+    height: auto;
+}
+
+.image-modal div img.portrait {
+    width: 100%;
+    height: auto;
+}
+
+.image-modal div button {
+    position: absolute;
+    background-color: var(--white);
+    border-radius: 50%;
+    border: none;
+    color: var(--black);
+    font-size: 1.25rem;
+    padding: 0.15rem;
+    margin: 0.25rem 0.25rem 0 0 ; 
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.image-modal div button:hover {
+    background-color: var(--black);
+    color: var(--white);
+    transition: 0.3s;
+}
+
+@media (min-width: 700px) {
+    .image-modal div {
+        padding: 1.25rem;
+    }
+
+    .image-modal div button {
+        font-size: 1.5rem;
+    }
+
+    .image-modal div img.landscape {
+        width: 1000px;
+        height: auto;
+    }
+
+    .image-modal div img.portrait {
+        width: auto;
+        height: 550px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .image-modal div {
+        padding: 1.25rem;
+    }
+
+    .image-modal div button {
+        font-size: 1.5rem;
+    }
+
+    .image-modal div img.landscape {
+        width: 1000px;
+        height: auto;
+    }
+
+    .image-modal div img.portrait {
+        width: auto;
+        height: 550px;
+    }
+}
+
+@media (min-width: 1900px) {
+    .image-modal div img.portrait {
+        width: auto;
+        height: 800px;
+    }
+}
